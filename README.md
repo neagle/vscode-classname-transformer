@@ -79,12 +79,26 @@ npm run build
 
 Press `F5` in this extension folder to launch an Extension Development Host.
 
-## Install for all workspaces (this VS Code install)
+## Install (command line)
+
+```bash
+code --install-extension vscode-classname-transformer-0.0.1.vsix
+```
+
+## Install in VS Code (from prebuilt `.vsix`)
+
+If you already have a released `.vsix` file, install it directly in VS Code:
+
+1. Open **Command Palette** (`Cmd + Shift + P`)
+2. Run **Extensions: Install from VSIX...**
+3. Select the `.vsix` file
+
+Installing a `.vsix` makes the extension available globally in this VS Code installation (not tied to one project workspace).
+
+## Build/package `.vsix` (maintainers)
 
 ```bash
 npm install
 npm run build
-npm run package-and-install
+npm run package
 ```
-
-Installing a `.vsix` makes the extension available globally in this VS Code installation (not tied to one project workspace).
