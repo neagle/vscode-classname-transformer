@@ -31,9 +31,22 @@ This is easier to read, you can add / delete classes easily, and you can easily 
 
 When class strings have a lot of different conditions or permutations, the logic to put them together neatly can quickly get ugly. [Classnames](https://www.npmjs.com/package/classnames) is a very old, simple JavaScript utility for conditionally joining classNames together. It accepts strings, arrays of strings, and objects with true/false conditions and transforms them to a space-separated string.
 
+## Requirements
+
+The code this creates requires the [classnames](https://www.npmjs.com/package/classnames) package to be installed in your project.
+
+```
+npm i classnames
+```
+
 ## Command
 
+In VS Code, bring up your command palette (`Cmd + Shift + P`) and type enough characters to bring up the following command:
+
 - **Convert className Strings to classnames()**
+
+
+(`classnames` is a small, simple JavaScript utility for conditionally joining classNames together.)
 
 ## What it does
 
@@ -71,8 +84,7 @@ Press `F5` in this extension folder to launch an Extension Development Host.
 ```bash
 npm install
 npm run build
-npm run package
-code --install-extension vscode-classname-transformer-0.0.3.vsix
+npm run package-and-install
 ```
 
 Installing a `.vsix` makes the extension available globally in this VS Code installation (not tied to one project workspace).

@@ -25,7 +25,9 @@
   "scripts": {
     "build": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "package": "vsce package"
+    "package": "vsce package",
+    "install-extension": "code --install-extension ./$(node -p \"const p=require('./package.json'); p.name + '-' + p.version + '.vsix'\")",
+    "package-and-install": "npm run package && npm run install-extension"
   },
   "devDependencies": {
     "@types/node": "^20.17.0",
