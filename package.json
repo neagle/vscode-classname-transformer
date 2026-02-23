@@ -1,0 +1,36 @@
+{
+  "name": "vscode-classname-transformer",
+  "displayName": "className to classnames Transformer",
+  "description": "Transforms selected React className strings into classnames([...]) expressions.",
+  "version": "0.0.3",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:classnameTransformer.convertSelectionToClassnames"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "classnameTransformer.convertSelectionToClassnames",
+        "title": "Convert className Strings to classnames()"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.7.2",
+    "@vscode/vsce": "^3.2.2"
+  }
+}
