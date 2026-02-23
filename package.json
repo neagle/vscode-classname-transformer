@@ -3,7 +3,7 @@
   "displayName": "className to classnames Transformer",
   "description": "Transforms selected React className strings into classnames([...]) expressions.",
   "version": "0.0.3",
-  "publisher": "local",
+  "repository": "https://github.com/neagle/vscode-classname-transformer",
   "engines": {
     "vscode": "^1.90.0"
   },
